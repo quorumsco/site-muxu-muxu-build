@@ -507,7 +507,7 @@ header {
     transform: translate3d(-105px, 10px, 0px);
     animation-timing-function: ease-in-out; }
   100% {
-    transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(c0px, 0px, 0px);
     animation-timing-function: ease-in-out; } }
 @keyframes bubble-r {
   0% {
