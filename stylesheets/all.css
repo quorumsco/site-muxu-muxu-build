@@ -199,7 +199,6 @@ header {
     overflow: visible; }
     .shade-blue.contact img.man {
       position: absolute;
-      top: -35px;
       left: 100px; }
     .shade-blue.contact img.woman {
       position: absolute;
@@ -280,7 +279,7 @@ header {
     position: relative;
     height: 540px; }
     .wrapper.hero p.use-quorum {
-      line-height: 15px; }
+      line-height: 26px; }
     .wrapper.hero ul {
       list-style: none;
       padding-left: 0;
@@ -305,7 +304,12 @@ header {
       position: absolute;
       top: 13px;
       right: 40px;
-      min-width: 457px; }
+      min-width: 457px;
+      max-width: 45%; }
+      .wrapper.hero .features img {
+        width: 80%; }
+      .wrapper.hero .features .use-quorum {
+        margin-top: 20px; }
       .wrapper.hero .features h1 {
         max-width: 460px;
         font-size: 32px;
@@ -342,7 +346,7 @@ header {
             justify-content: space-between;
     -ms-flex-flow: row wrap;
         flex-flow: row wrap;
-    padding-top: 100px; }
+    padding-top: 150px; }
     .wrapper.cards .card {
       width: 280px;
       border-radius: 2px;
@@ -369,6 +373,11 @@ header {
           line-height: 29px;
           font-size: 18px;
           margin: 40px 0 5px; }
+          .wrapper.cards .card .catchphrase p em.hbr {
+            color: #637790;
+            text-transform: none;
+            font-style: normal;
+            font-size: 10px; }
         .wrapper.cards .card .catchphrase a {
           width: 215px; }
       .wrapper.cards .card.about {
@@ -377,19 +386,24 @@ header {
           position: absolute;
           top: -8px;
           line-height: 29px;
-          font-size: 18px;
-          margin: 0; }
+          margin: 0;
+          font-size: 1.1rem;
+          font-weight: 500; }
+          .wrapper.cards .card.about p em {
+            color: blackblack;
+            text-transform: none;
+            font-style: inherit;
+            font-weight: bold; }
       .wrapper.cards .card.invisible {
         background-color: white; }
   .wrapper.mobile-app {
-    padding: 100px 0 90px;
-    margin-top: 170px;
+    padding: 0px 0 80px;
+    margin-top: 0px;
     max-width: 955px;
     position: relative; }
     .wrapper.mobile-app img {
       width: 664px;
       position: absolute;
-      top: 0;
       left: -261px; }
     .wrapper.mobile-app .content {
       margin-left: 450px; }
@@ -432,12 +446,31 @@ header {
   .wrapper.web-app {
     padding: 150px 0 0px;
     position: relative; }
+    .wrapper.web-app .big-title-container {
+      margin: 0px 0 100px 0; }
+      .wrapper.web-app .big-title-container .big-title {
+        text-align: center;
+        line-height: 39px;
+        margin-top: 80px;
+        max-width: 490px;
+        margin: 0 auto; }
+      .wrapper.web-app .big-title-container .big-title-subtitle {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 700;
+        color: #808C9B;
+        margin: 0;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        margin-top: 5px; }
     .wrapper.web-app h2 {
       line-height: 39px;
       margin-top: 5px;
       text-align: center;
       max-width: 490px;
-      margin: 0 auto; }
+      margin: 0 auto 0px auto; }
+      .wrapper.web-app h2.analyse {
+        margin: 0 auto 120px auto; }
     .wrapper.web-app h3 {
       font-size: 12px;
       font-weight: 700;
@@ -458,7 +491,7 @@ header {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin: 90px 0px; }
+      margin: 120px 0px; }
       .wrapper.web-app .web-illustration .screen {
         position: relative;
         z-index: 5;
@@ -783,7 +816,8 @@ header {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    margin: 150px 0; }
     .wrapper.second-t-webapp .container-txt h2 {
       text-align: left;
       padding: 0 5px;
@@ -807,7 +841,7 @@ header {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 0px;
-    margin: 130px 0; }
+    margin: 120px 0 120px 0; }
     .wrapper.second-t-webapp .api .item, .wrapper.second-t-webapp .api-mobile .item {
       -webkit-box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08);
               box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.08);
@@ -827,7 +861,7 @@ header {
     display: -ms-flexbox;
     display: flex; }
   .wrapper.news {
-    padding: 90px 0 195px;
+    padding: 130px 0 50px;
     text-align: center; }
     .wrapper.news h2 {
       margin-bottom: 20px;
@@ -875,7 +909,7 @@ header {
             margin-left: 25px;
             text-transform: uppercase; }
   .wrapper.partners {
-    padding: 141px 0 135px;
+    padding: 100px 0 150px;
     text-align: center; }
     .wrapper.partners h2 {
       text-align: center;
@@ -892,21 +926,34 @@ header {
     .wrapper.partners img.mobile {
       display: none; }
   .wrapper.contact {
-    padding: 75px 0 65px;
-    text-align: center; }
+    text-align: center;
+    text-align: center;
+    max-width: 700px;
+    font-size: 1.3rem;
+    margin: 80px auto 0 auto; }
+    .wrapper.contact .webapp {
+      width: 100%;
+      margin: 30px 0;
+      -webkit-box-shadow: 0 1px 6px 0 rgba(33, 62, 97, 0.2), 0 0 1px 0 rgba(33, 62, 97, 0.15);
+              box-shadow: 0 1px 6px 0 rgba(33, 62, 97, 0.2), 0 0 1px 0 rgba(33, 62, 97, 0.15);
+      border-radius: 6px; }
+    .wrapper.contact h3 {
+      margin-top: 20px; }
     .wrapper.contact h2 {
-      text-align: center; }
+      text-align: center;
+      margin: 0 auto;
+      font-size: 1.1rem; }
+    .wrapper.contact .contact-info {
+      font-size: 1.3rem; }
     .wrapper.contact span {
-      font-size: 30px;
-      font-weight: 300;
-      margin: 0 8px; }
+      font-weight: 500;
+      margin: 0 8px;
+      font-size: 18px; }
     .wrapper.contact a {
       color: #584CE6;
-      font-size: 30px;
       font-weight: 500; }
   .wrapper.pricing-intro {
     text-align: center;
-    max-width: 450px;
     margin-top: 137px; }
     .wrapper.pricing-intro img.fr-pricing-title {
       width: 190px; }
@@ -915,7 +962,7 @@ header {
     .wrapper.pricing-intro p {
       text-align: center;
       line-height: 27px;
-      padding: 10px 0 25px; }
+      padding: 20px 0 25px; }
   .wrapper.pricing {
     position: relative;
     padding-bottom: 130px; }
@@ -977,16 +1024,25 @@ header {
       .wrapper.pricing .overlay-contact .contact-info {
         position: absolute;
         bottom: 155px;
-        width: 100%; }
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 1.3rem;
+        left: 50%;
+        -webkit-transform: translatex(-50%);
+                transform: translatex(-50%); }
         .wrapper.pricing .overlay-contact .contact-info h2 {
-          text-align: center; }
+          text-align: center;
+          margin: 0 auto;
+          max-width: 700px;
+          font-size: 1.3rem; }
         .wrapper.pricing .overlay-contact .contact-info span {
-          font-size: 30px;
           font-weight: 300;
           margin: 0 8px; }
         .wrapper.pricing .overlay-contact .contact-info a {
           color: #584CE6;
-          font-size: 30px;
+          font-size: 1.3rem;
           font-weight: 500; }
   .wrapper.services {
     padding-bottom: 20px;
@@ -1061,16 +1117,19 @@ header {
     letter-spacing: 1.3px;
     font-weight: 600;
     padding-top: 45px;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    max-width: 700px;
+    padding-top: 130px;
+    margin: 0 auto; }
   .wrapper.actions hr {
     width: 90px;
     height: 2px;
     background: #B9C0E2;
     display: block;
-    margin: 0 auto;
+    margin: 25x auto 100px auto;
     border: 0; }
   .wrapper.actions .items {
-    padding: 25px 0 50px;
+    padding: 50px 0 25px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1144,8 +1203,7 @@ header {
           padding: 160px 80px; }
           .wrapper.team .content .mobilised h3 span {
             font-size: 80px;
-            display: block;
-            line-height: 60px; }
+            display: block; }
       .wrapper.team .content .teammembers {
         max-width: 300px;
         margin-left: 20px; }
@@ -1161,8 +1219,20 @@ header {
           border-radius: 4px;
           font-size: 16px;
           font-weight: 600; }
+          .wrapper.team .content .teammembers a.insight {
+            background-color: inherit;
+            padding: inherit;
+            border-radius: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            font-size: 18px;
+            color: #584CE6; }
+            .wrapper.team .content .teammembers a.insight:hover {
+              background-color: inherit;
+              color: inherit; }
           .wrapper.team .content .teammembers a:hover {
-            background: #E5415F; }
+            background: #E5415F;
+            color: white; }
   .wrapper.news-extended {
     padding: 80px 0 35px; }
     .wrapper.news-extended h1 {
@@ -1621,6 +1691,7 @@ footer {
       display: block;
       width: 90%;
       left: 0;
+      top: 0;
       margin: 40px auto 0; }
   .wrapper.web-app {
     padding: 0px 20px;
@@ -1697,12 +1768,22 @@ footer {
       height: 605px; }
       .wrapper.pricing .overlay-contact img.man, .wrapper.pricing .overlay-contact img.woman {
         display: none; }
+      .wrapper.pricing .overlay-contact.contact {
+        text-align: center;
+        text-align: center;
+        margin: 0 auto;
+        max-width: 700px;
+        font-size: 1.3rem; }
+        .wrapper.pricing .overlay-contact.contact h2 {
+          text-align: center;
+          margin: 0 auto;
+          font-size: 1.1rem; }
+        .wrapper.pricing .overlay-contact.contact .contact-info {
+          font-size: 1.3rem; }
       .wrapper.pricing .overlay-contact .contact-info {
         bottom: 130px; }
-        .wrapper.pricing .overlay-contact .contact-info h2 {
-          font-size: 18px; }
         .wrapper.pricing .overlay-contact .contact-info a, .wrapper.pricing .overlay-contact .contact-info span {
-          font-size: 18px; }
+          font-size: 1.3rem; }
         .wrapper.pricing .overlay-contact .contact-info span {
           margin: 0 5px; }
         .wrapper.pricing .overlay-contact .contact-info a.tel {
@@ -1855,6 +1936,33 @@ footer {
           display: block;
           width: 100%;
           margin-top: 10px; } }
+.contact-coming-soon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .contact-coming-soon .sub-container {
+    width: 40%;
+    padding: 20px 5px;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(33, 62, 97, 0.2), 0 0 1px 0 rgba(33, 62, 97, 0.15);
+            box-shadow: 0 1px 6px 0 rgba(33, 62, 97, 0.2), 0 0 1px 0 rgba(33, 62, 97, 0.15);
+    border-radius: 6px; }
+    .contact-coming-soon .sub-container p {
+      text-align: left; }
+    .contact-coming-soon .sub-container div {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
+      text-align: left;
+      margin: 10px; }
+      .contact-coming-soon .sub-container div a {
+        color: #0B3BDE;
+        text-decoration: none; }
+
 @media screen and (max-width: 768px) {
   body .white .web-app .bubble-container {
     display: none; }
@@ -1941,7 +2049,21 @@ footer {
         flex-wrap: wrap; }
     body .white .second-t-webapp .container-txt h2, body .white .second-t-webapp .container-txt p {
       display: block;
-      width: 100%; } }
+      width: 100%; }
+  body .wrapper.pricing .overlay-contact .contact-info {
+    bottom: 0; }
+  body .contact-coming-soon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .contact-coming-soon .sub-container {
+      margin: 10px;
+      width: 90%; }
+      body .contact-coming-soon .sub-container div {
+        word-wrap: break-word; }
+  body .wrapper.hero .features {
+    max-width: 100%; } }
 [data-fluffy-container] {
   background-color: rgba(255, 255, 255, 0);
   position: relative;
